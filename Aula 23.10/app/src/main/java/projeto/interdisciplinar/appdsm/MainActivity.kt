@@ -94,9 +94,10 @@ fun App(viewModel: PessoaViewModel, mainActivity: MainActivity){
         telefone
     )
 
-    val pessoaList by remember {
+    var pessoaList by remember {
         mutableStateOf(listOf<Pessoa>())
     }
+
 
     Column(
         Modifier
